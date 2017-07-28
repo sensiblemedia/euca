@@ -1,6 +1,9 @@
 #!/usr/bin/bash
 
-Create static uplink veth pair:
+iptables -F
+iptables -t nat -F
+
+#Create static uplink veth pair:
 ip link add type veth
 ip link set dev veth0 up
 ip link set dev veth1 up
@@ -9,7 +12,7 @@ ip link set dev veth1 up
 brctl addbr uplinkbridge
 brctl addif uplinkbridge veth0
 ip addr add 172.19.0.1/30 dev uplinkbridge
-ip link set dev uplink bridge up
+ip link set dev uplinkbridge up
 
 # Create Static Routes
 for i in {10..40}; do ip route add 192.168.0.${i}/32 via 172.19.0.2 ; done
