@@ -1,0 +1,6 @@
+DEVICE=em1
+# change the hardware address to match the hardware address your NIC uses
+HWADDR=d4:ae:52:98:b9:c9
+ONBOOT=yes
+BRIDGE=br0
+NM_CONTROLLED=no

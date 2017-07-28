@@ -1,0 +1,20 @@
+{
+	"InstanceDnsServers": [
+    		"192.168.0.5"
+  	],
+  	"Mode": "VPCMIDO",
+  	"PublicIps": [
+    		"192.168.0.10-192.168.0.40"
+  	],
+  	"Mido": {
+    		"Gateways": [
+        		{
+            			"Ip": "192.168.0.5",
+             			"ExternalDevice": "veth1",
+             			"ExternalCidr": "172.19.0.0/30",
+             			"ExternalIp": "172.19.0.2",
+             			"ExternalRouterIp": "172.19.0.1"
+        		}
+    		]
+	}
+}
