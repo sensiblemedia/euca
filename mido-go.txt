@@ -1,0 +1,4 @@
+systemctl enable midonet-cluster.service
+systemctl enable midolman.service
+systemctl start midonet-cluster.service
+systemctl start midolman.service
