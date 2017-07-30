@@ -1,0 +1,156 @@
+
+
+
+# ls -lart /etc/yum.repos.d/
+-rw-r--r--.   1 root root 2893 Nov 29  2016 CentOS-Vault.repo
+-rw-r--r--.   1 root root 1331 Nov 29  2016 CentOS-Sources.repo
+-rw-r--r--.   1 root root  630 Nov 29  2016 CentOS-Media.repo
+-rw-r--r--.   1 root root  314 Nov 29  2016 CentOS-fasttrack.repo
+-rw-r--r--.   1 root root  649 Nov 29  2016 CentOS-Debuginfo.repo
+-rw-r--r--.   1 root root 1309 Nov 29  2016 CentOS-CR.repo
+-rw-r--r--.   1 root root 1664 Nov 29  2016 CentOS-Base.repo
+-rw-r--r--.   1 root root 1050 Jun 24 16:04 epel-testing.repo
+-rw-r--r--.   1 root root  951 Jun 24 16:04 epel.repo
+-rw-r--r--.   1 root root  314 Jul 29 18:24 eucalyptus.repo
+-rw-r--r--.   1 root root  311 Jul 29 18:24 euca2ools.repo
+
+#Enable DataStax repository
+#Create the /etc/yum.repos.d/datastax.repo file and edit it to contain the following:
+
+# DataStax (Apache Cassandra)
+[datastax]
+name = DataStax Repo for Apache Cassandra
+baseurl = http://rpm.datastax.com/community
+enabled = 1
+gpgcheck = 1
+gpgkey = https://rpm.datastax.com/rpm/repo_key
+
+
+#Enable MidoNet repositories
+#Create the /etc/yum.repos.d/midonet.repo file and edit it to contain the following:
+
+[midonet]
+name=MidoNet
+baseurl=http://builds.midonet.org/midonet-5.4/stable/el7/
+enabled=1
+gpgcheck=1
+gpgkey=https://builds.midonet.org/midorepo.key
+
+[midonet-openstack-integration]
+name=MidoNet OpenStack Integration
+baseurl=http://builds.midonet.org/openstack-mitaka/stable/el7/
+enabled=1
+gpgcheck=1
+gpgkey=https://builds.midonet.org/midorepo.key
+
+[midonet-misc]
+name=MidoNet 3rd Party Tools and Libraries
+baseurl=http://builds.midonet.org/misc/stable/el7/
+enabled=1
+gpgcheck=1
+gpgkey=https://builds.midonet.org/midorepo.key
+
+Configure network
+
+
+yum install http://dl.fedoraproject.org/pub/epel/7/x86_64/e/epel-release-7-5.noarch.rpm
+yum install http://rdo.fedorapeople.org/openstack-kilo/rdo-release-kilo.rpm
+
+Install available updates
+
+# yum clean all
+# yum -y upgrade
+
+# Install zookeeper
+########################################
+
+yum -y install zookeeper zkdump nmap-ncat
+https://docs.midonet.org/docs/latest-en/quick-start-guide/rhel-7_mitaka-rdo/content/_zookeeper_installation.htm
+
+vi /etc/zookeeper/zoo.cfg
+
+echo 1 > /var/lib/zookeeper/data/myid
+systemctl enable zookeeper.service
+systemctl start zookeeper.service
+
+# Test Zookeeper
+echo ruok | nc 127.0.0.1 2181
+imok
+
+echo stat | nc 127.0.0.1 2181
+
+# Install Cassandra
+########################################
+
+yum -y install dsc22
+
+/etc/cassandra/conf/cassandra.yaml
+
+cluster_name: 'midonet'
+- seeds: "127.0.0.1"
+listen_address: 127.0.0.1
+rpc_address: 127.0.0.1
+
+vi  /etc/init.d/cassandra
+        echo -n "Starting Cassandra: "
+        mkdir -p /var/run/cassandra
+        chown cassandra:cassandra /var/run/cassandra
+
+#Enable and start services
+systemctl enable cassandra.service
+systemctl start cassandra.service
+
+# Test 
+nodetool --host 127.0.0.1 status
+
+# MidoNet Cluster on the CLC
+
+yum install -y midonet-cluster midolman python-midonetclient
+
+vi /etc/midonet/midonet.conf
+[zookeeper]
+zookeeper_hosts = 127.0.0.1:2181
+
+cd ~/euca
+cat nsdb-mn-conf.in | mn-conf set -t default
+Installing config key that was not found in the schema: zookeeper.zookeeper_hosts
+Installing config key that was not found in the schema: cassandra.servers 
+
+systemctl enable midonet-cluster.service
+systemctl start midonet-cluster.service
+systemctl status midonet-cluster.service
+
+mn-conf set cluster.rest_api.http_port=8080
+mn-conf set cluster.rest_api.http_host="127.0.0.1"
+
+# install Midolman agent
+
+/etc/midolman/midolman.conf
+[zookeeper]
+zookeeper_hosts = 127.0.0.1:2181
+
+or 
+cp ~/euca/midoman.conf /etc/midolman/midolman.conf
+
+systemctl enable midolman.service
+systemctl start midolman.service
+
+mn-conf template-set -h local -t default
+
+midonet-cli -A --midonet-url=http://127.0.0.1:8080/midonet-api
+midonet-cli -A --midonet-url=http://127.0.0.1:8080/midonet-api
+midonet> tunnel-zone add name eucatz type gre
+midonet> tunnel-zone list
+tzone tzone0 name eucatz type gre
+midonet> host list
+host host0 name node1 alive true
+midonet> tunnel-zone tzone0 add member host host0 address 192.168.0.5
+
+
+
+SELINUX
+
+Access denie when starting midolman
+yum install policycoreutils-python
+
+

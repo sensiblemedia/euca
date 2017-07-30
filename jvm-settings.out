@@ -1,0 +1,56 @@
+Jul 29 23:17:50 localhost eucalyptus-cloud: 2017-07-29 23:17:50 29985 DEBUG 0837 User defined heap size is 21474836480 bytes
+Jul 29 23:17:50 localhost eucalyptus-cloud: 2017-07-29 23:17:50 29985 DEBUG 0978 +-------------------------------------------------------
+Jul 29 23:17:50 localhost eucalyptus-cloud: 2017-07-29 23:17:50 29985 DEBUG 0980 | Eucalyptus version:            4.4.1-0.25884.40.el7
+Jul 29 23:17:50 localhost eucalyptus-cloud: 2017-07-29 23:17:50 29985 DEBUG 0984 | JNI version:                   10004
+Jul 29 23:17:50 localhost eucalyptus-cloud: 2017-07-29 23:17:50 29985 DEBUG 0985 | Ignore Unrecognized Arguments: 0
+Jul 29 23:17:50 localhost eucalyptus-cloud: 2017-07-29 23:17:50 29985 DEBUG 0986 | Extra options:                 40
+Jul 29 23:17:50 localhost eucalyptus-cloud: 2017-07-29 23:17:50 29985 DEBUG 0988 |   "-Xbootclasspath/p://///usr/share/eucalyptus/openjdk-crypto.jar                  " (0x(nil))
+Jul 29 23:17:50 localhost eucalyptus-cloud: 2017-07-29 23:17:50 29985 DEBUG 0988 |   "-XX:+UseG1GC                                                                    " (0x(nil))
+Jul 29 23:17:50 localhost eucalyptus-cloud: 2017-07-29 23:17:50 29985 DEBUG 0988 |   "-XX:MaxGCPauseMillis=200                                                        " (0x(nil))
+Jul 29 23:17:50 localhost eucalyptus-cloud: 2017-07-29 23:17:50 29985 DEBUG 0988 |   "-XX:+DisableExplicitGC                                                          " (0x(nil))
+Jul 29 23:17:50 localhost eucalyptus-cloud: 2017-07-29 23:17:50 29985 DEBUG 0988 |   "-javaagent:///usr/share/eucalyptus/aspectjweaver-1.8.8.jar                      " (0x(nil))
+Jul 29 23:17:50 localhost eucalyptus-cloud: 2017-07-29 23:17:50 29985 DEBUG 0988 |   "-Djava.net.preferIPv4Stack=true                                                 " (0x(nil))
+Jul 29 23:17:50 localhost eucalyptus-cloud: 2017-07-29 23:17:50 29985 DEBUG 0988 |   "-Djava.library.path=///usr/lib/eucalyptus                                       " (0x(nil))
+Jul 29 23:17:50 localhost eucalyptus-cloud: 2017-07-29 23:17:50 29985 DEBUG 0988 |   "-Djava.awt.headless=true                                                        " (0x(nil))
+Jul 29 23:17:50 localhost eucalyptus-cloud: 2017-07-29 23:17:50 29985 DEBUG 0988 |   "-Dsun.java.command=Eucalyptus                                                   " (0x(nil))
+Jul 29 23:17:50 localhost eucalyptus-cloud: 2017-07-29 23:17:50 29985 DEBUG 0988 |   "-Deuca.home=//                                                                  " (0x(nil))
+Jul 29 23:17:50 localhost eucalyptus-cloud: 2017-07-29 23:17:50 29985 DEBUG 0988 |   "-Deuca.db.home=                                                                 " (0x(nil))
+Jul 29 23:17:50 localhost eucalyptus-cloud: 2017-07-29 23:17:50 29985 DEBUG 0988 |   "-Deuca.extra_version=                                                           " (0x(nil))
+Jul 29 23:17:51 localhost eucalyptus-cloud: 2017-07-29 23:17:50 29985 DEBUG 0988 |   "-Deuca.var.dir=///var/lib/eucalyptus                                            " (0x(nil))
+Jul 29 23:17:51 localhost eucalyptus-cloud: 2017-07-29 23:17:50 29985 DEBUG 0988 |   "-Deuca.state.dir=///var/lib/eucalyptus                                          " (0x(nil))
+Jul 29 23:17:51 localhost eucalyptus-cloud: 2017-07-29 23:17:50 29985 DEBUG 0988 |   "-Deuca.run.dir=///var/run/eucalyptus                                            " (0x(nil))
+Jul 29 23:17:51 localhost eucalyptus-cloud: 2017-07-29 23:17:50 29985 DEBUG 0988 |   "-Deuca.lib.dir=///usr/share/eucalyptus                                          " (0x(nil))
+Jul 29 23:17:51 localhost eucalyptus-cloud: 2017-07-29 23:17:50 29985 DEBUG 0988 |   "-Deuca.libexec.dir=///usr/lib/eucalyptus                                        " (0x(nil))
+Jul 29 23:17:51 localhost eucalyptus-cloud: 2017-07-29 23:17:50 29985 DEBUG 0988 |   "-Deuca.conf.dir=///etc/eucalyptus/cloud.d                                       " (0x(nil))
+Jul 29 23:17:51 localhost eucalyptus-cloud: 2017-07-29 23:17:50 29985 DEBUG 0988 |   "-Deuca.log.dir=///var/log/eucalyptus                                            " (0x(nil))
+Jul 29 23:17:51 localhost eucalyptus-cloud: 2017-07-29 23:17:50 29985 DEBUG 0988 |   "-Deuca.jni.dir=///usr/lib/eucalyptus                                            " (0x(nil))
+Jul 29 23:17:51 localhost eucalyptus-cloud: 2017-07-29 23:17:50 29985 DEBUG 0988 |   "-Djava.util.prefs.PreferencesFactory=com.eucalyptus.util.NoopPreferencesFactory " (0x(nil))
+Jul 29 23:17:51 localhost eucalyptus-cloud: 2017-07-29 23:17:50 29985 DEBUG 0988 |   "-Deuca.log.exhaustive.db=FATAL                                                  " (0x(nil))
+Jul 29 23:17:51 localhost eucalyptus-cloud: 2017-07-29 23:17:50 29985 DEBUG 0988 |   "-Deuca.log.exhaustive.cc=FATAL                                                  " (0x(nil))
+Jul 29 23:17:51 localhost eucalyptus-cloud: 2017-07-29 23:17:50 29985 DEBUG 0988 |   "-Deuca.log.exhaustive.user=FATAL                                                " (0x(nil))
+Jul 29 23:17:51 localhost eucalyptus-cloud: 2017-07-29 23:17:50 29985 DEBUG 0988 |   "-Deuca.log.exhaustive.external=FATAL                                            " (0x(nil))
+Jul 29 23:17:51 localhost eucalyptus-cloud: 2017-07-29 23:17:50 29985 DEBUG 0988 |   "-Deuca.log.exhaustive=FATAL                                                     " (0x(nil))
+Jul 29 23:17:51 localhost eucalyptus-cloud: 2017-07-29 23:17:50 29985 DEBUG 0988 |   "-Deuca.version=4.4.1                                                            " (0x(nil))
+Jul 29 23:17:51 localhost eucalyptus-cloud: 2017-07-29 23:17:50 29985 DEBUG 0988 |   "-Deuca.log.level=INFO                                                           " (0x(nil))
+Jul 29 23:17:51 localhost eucalyptus-cloud: 2017-07-29 23:17:50 29985 DEBUG 0988 |   "-Deuca.log.appender=console-log                                                 " (0x(nil))
+Jul 29 23:17:51 localhost eucalyptus-cloud: 2017-07-29 23:17:50 29985 DEBUG 0988 |   "-Deuca.extra_version=0.25884.40.el7                                             " (0x(nil))
+Jul 29 23:17:51 localhost eucalyptus-cloud: 2017-07-29 23:17:50 29985 DEBUG 0988 |   "-XX:+HeapDumpOnOutOfMemoryError                                                 " (0x(nil))
+Jul 29 23:17:51 localhost eucalyptus-cloud: 2017-07-29 23:17:50 29985 DEBUG 0988 |   "-XX:HeapDumpPath=///var/log/eucalyptus/                                         " (0x(nil))
+Jul 29 23:17:51 localhost eucalyptus-cloud: 2017-07-29 23:17:50 29985 DEBUG 0988 |   "-agentlib:jdwp=transport=dt_socket,server=y,suspend=n,address=5005              " (0x(nil))
+Jul 29 23:17:51 localhost eucalyptus-cloud: 2017-07-29 23:17:50 29985 DEBUG 0988 |   "-Deuca.user=eucalyptus                                                          " (0x(nil))
+Jul 29 23:17:51 localhost eucalyptus-cloud: 2017-07-29 23:17:50 29985 DEBUG 0988 |   "-Xms2g                                                                          " (0x(nil))
+Jul 29 23:17:51 localhost eucalyptus-cloud: 2017-07-29 23:17:50 29985 DEBUG 0988 |   "-Xmx20g                                                                         " (0x(nil))
+Jul 29 23:17:51 localhost eucalyptus-cloud: 2017-07-29 23:17:50 29985 DEBUG 0988 |   "-Deuca.bind.addr.0=192.168.0.5                                                  " (0x(nil))
+Jul 29 23:17:51 localhost eucalyptus-cloud: 2017-07-29 23:17:50 29985 DEBUG 0988 |   "-Dfile.encoding=UTF-8                                                           " (0x(nil))
+Jul 29 23:17:51 localhost eucalyptus-cloud: 2017-07-29 23:17:50 29985 DEBUG 0988 |   "-Djava.class.path=///etc/eucalyptus/cloud.d:///var/run/eucalyptus/classcache:///" (0x(nil))
+Jul 29 23:17:51 localhost eucalyptus-cloud: 2017-07-29 23:17:50 29985 DEBUG 0988 |   "abort                                                                           " (0x0x403bf0)
+Jul 29 23:17:51 localhost eucalyptus-cloud: 2017-07-29 23:17:50 29985 DEBUG 0989 +-------------------------------------------------------
+Jul 29 23:17:51 localhost eucalyptus-cloud: 2017-07-29 23:17:50 29985 DEBUG 0991 Starting JVM.
+Jul 29 23:17:51 localhost eucalyptus-cloud: ERROR: transport error 202: bind failed: Permission denied
+Jul 29 23:17:51 localhost eucalyptus-cloud: ERROR: JDWP Transport dt_socket failed to initialize, TRANSPORT_INIT(510)
+Jul 29 23:17:51 localhost eucalyptus-cloud: JDWP exit error AGENT_ERROR_TRANSPORT_INIT(197): No transports initialized [debugInit.c:750]
+Jul 29 23:17:51 localhost eucalyptus-cloud: 2017-07-29 23:17:51 29982 DEBUG 0588 Eucalyptus exited with status: 2
+Jul 29 23:17:51 localhost eucalyptus-cloud: 2017-07-29 23:17:51 29982 ERROR 0597 Service exit with a return value of 2.
+Jul 29 23:17:51 localhost systemd: eucalyptus-cloud.service: main process exited, code=exited, status=1/FAILURE
+Jul 29 23:17:51 localhost systemd: Unit eucalyptus-cloud.service entered failed state.
+Jul 29 23:17:51 localhost systemd: eucalyptus-cloud.service failed.
