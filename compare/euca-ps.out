@@ -1,0 +1,299 @@
+UID        PID  PPID  C STIME TTY          TIME CMD
+root         1     0  0 16:10 ?        00:00:13 /usr/lib/systemd/systemd --system --deserialize 22
+root         2     0  0 16:10 ?        00:00:00 [kthreadd]
+root         3     2  0 16:10 ?        00:00:00 [ksoftirqd/0]
+root         5     2  0 16:10 ?        00:00:00 [kworker/0:0H]
+root         7     2  0 16:10 ?        00:00:00 [migration/0]
+root         8     2  0 16:10 ?        00:00:00 [rcu_bh]
+root         9     2  0 16:10 ?        00:00:06 [rcu_sched]
+root        10     2  0 16:10 ?        00:00:00 [watchdog/0]
+root        11     2  0 16:10 ?        00:00:00 [watchdog/1]
+root        12     2  0 16:10 ?        00:00:00 [migration/1]
+root        13     2  0 16:10 ?        00:00:00 [ksoftirqd/1]
+root        15     2  0 16:10 ?        00:00:00 [kworker/1:0H]
+root        16     2  0 16:10 ?        00:00:00 [watchdog/2]
+root        17     2  0 16:10 ?        00:00:00 [migration/2]
+root        18     2  0 16:10 ?        00:00:00 [ksoftirqd/2]
+root        20     2  0 16:10 ?        00:00:00 [kworker/2:0H]
+root        21     2  0 16:10 ?        00:00:00 [watchdog/3]
+root        22     2  0 16:10 ?        00:00:00 [migration/3]
+root        23     2  0 16:10 ?        00:00:00 [ksoftirqd/3]
+root        25     2  0 16:10 ?        00:00:00 [kworker/3:0H]
+root        26     2  0 16:10 ?        00:00:00 [watchdog/4]
+root        27     2  0 16:10 ?        00:00:00 [migration/4]
+root        28     2  0 16:10 ?        00:00:00 [ksoftirqd/4]
+root        30     2  0 16:10 ?        00:00:00 [kworker/4:0H]
+root        31     2  0 16:10 ?        00:00:00 [watchdog/5]
+root        32     2  0 16:10 ?        00:00:00 [migration/5]
+root        33     2  0 16:10 ?        00:00:00 [ksoftirqd/5]
+root        35     2  0 16:10 ?        00:00:00 [kworker/5:0H]
+root        36     2  0 16:10 ?        00:00:00 [watchdog/6]
+root        37     2  0 16:10 ?        00:00:00 [migration/6]
+root        38     2  0 16:10 ?        00:00:00 [ksoftirqd/6]
+root        40     2  0 16:10 ?        00:00:00 [kworker/6:0H]
+root        41     2  0 16:10 ?        00:00:00 [watchdog/7]
+root        42     2  0 16:10 ?        00:00:00 [migration/7]
+root        43     2  0 16:10 ?        00:00:00 [ksoftirqd/7]
+root        45     2  0 16:10 ?        00:00:00 [kworker/7:0H]
+root        47     2  0 16:10 ?        00:00:00 [khelper]
+root        48     2  0 16:10 ?        00:00:00 [kdevtmpfs]
+root        49     2  0 16:10 ?        00:00:00 [netns]
+root        50     2  0 16:10 ?        00:00:00 [khungtaskd]
+root        51     2  0 16:10 ?        00:00:00 [writeback]
+root        52     2  0 16:10 ?        00:00:00 [kintegrityd]
+root        53     2  0 16:10 ?        00:00:00 [bioset]
+root        54     2  0 16:10 ?        00:00:00 [kblockd]
+root        55     2  0 16:10 ?        00:00:00 [md]
+root        62     2  0 16:10 ?        00:00:00 [kswapd0]
+root        63     2  0 16:10 ?        00:00:00 [ksmd]
+root        64     2  0 16:10 ?        00:00:00 [khugepaged]
+root        65     2  0 16:10 ?        00:00:00 [fsnotify_mark]
+root        66     2  0 16:10 ?        00:00:00 [crypto]
+root        74     2  0 16:10 ?        00:00:00 [kthrotld]
+root        76     2  0 16:10 ?        00:00:00 [kmpath_rdacd]
+root        77     2  0 16:10 ?        00:00:00 [kpsmoused]
+root        79     2  0 16:10 ?        00:00:00 [ipv6_addrconf]
+root        98     2  0 16:10 ?        00:00:00 [deferwq]
+root       136     2  0 16:10 ?        00:00:00 [kauditd]
+root       315     2  0 16:10 ?        00:00:01 [kworker/7:1]
+root       317     2  0 16:10 ?        00:00:00 [ata_sff]
+root       318     2  0 16:10 ?        00:00:00 [scsi_eh_0]
+root       319     2  0 16:10 ?        00:00:00 [scsi_tmf_0]
+root       320     2  0 16:10 ?        00:00:00 [scsi_eh_1]
+root       321     2  0 16:10 ?        00:00:00 [scsi_tmf_1]
+root       323     2  0 16:10 ?        00:00:00 [scsi_eh_2]
+root       324     2  0 16:10 ?        00:00:00 [scsi_tmf_2]
+root       325     2  0 16:10 ?        00:00:00 [scsi_eh_3]
+root       326     2  0 16:10 ?        00:00:00 [scsi_tmf_3]
+root       347     2  0 16:10 ?        00:00:00 [ttm_swap]
+root       364     2  0 16:10 ?        00:00:00 [scsi_eh_4]
+root       365     2  0 16:10 ?        00:00:00 [scsi_tmf_4]
+root       366     2  0 16:10 ?        00:00:00 [usb-storage]
+root       383     2  0 16:10 ?        00:00:07 [kworker/3:1H]
+root       384     2  0 16:10 ?        00:00:00 [kworker/0:1H]
+root       385     2  0 16:10 ?        00:00:00 [kworker/7:1H]
+root       388     2  0 16:10 ?        00:00:00 [kworker/1:1H]
+root       393     2  0 16:10 ?        00:00:00 [kworker/2:1H]
+root       394     2  0 16:10 ?        00:00:00 [kworker/6:1H]
+root       395     2  0 16:10 ?        00:00:00 [kworker/4:1H]
+root       456     2  0 16:10 ?        00:00:00 [kdmflush]
+root       469     2  0 16:10 ?        00:00:00 [kdmflush]
+root       470     2  0 16:10 ?        00:00:00 [bioset]
+root       484     2  0 16:10 ?        00:00:00 [jbd2/dm-0-8]
+root       485     2  0 16:10 ?        00:00:00 [ext4-rsv-conver]
+root       558     1  0 16:10 ?        00:00:03 /usr/lib/systemd/systemd-journald
+root       583     2  0 16:10 ?        00:00:00 [kworker/5:1H]
+root       614     2  0 16:10 ?        00:00:00 [edac-poller]
+root       625     2  0 16:10 ?        00:00:00 [kipmi0]
+root       672     2  0 16:10 ?        00:00:00 [xfsalloc]
+root       673     2  0 16:10 ?        00:00:00 [xfs_mru_cache]
+root       674     2  0 16:10 ?        00:00:00 [xfs-buf/sdd1]
+root       675     2  0 16:10 ?        00:00:00 [xfs-data/sdd1]
+root       676     2  0 16:10 ?        00:00:00 [xfs-conv/sdd1]
+root       677     2  0 16:10 ?        00:00:00 [xfs-cil/sdd1]
+root       678     2  0 16:10 ?        00:00:00 [xfs-reclaim/sdd]
+root       679     2  0 16:10 ?        00:00:00 [xfs-log/sdd1]
+root       680     2  0 16:10 ?        00:00:00 [xfs-eofblocks/s]
+root       681     2  0 16:10 ?        00:00:00 [xfsaild/sdd1]
+root       713     2  0 16:10 ?        00:00:00 [kvm-irqfd-clean]
+root       714     2  0 16:10 ?        00:00:00 [kdmflush]
+root       742     2  0 16:10 ?        00:00:01 [jbd2/dm-2-8]
+root       743     2  0 16:10 ?        00:00:00 [ext4-rsv-conver]
+dbus       790     1  0 16:10 ?        00:00:04 /bin/dbus-daemon --system --address=systemd: --nofork --nopidfile --systemd-activation
+root       792     1  0 16:10 ?        00:00:00 /usr/lib/systemd/systemd-logind
+root       810     1  0 16:10 tty1     00:00:00 /sbin/agetty --noclear tty1 linux
+root      2965     1  0 16:11 ?        00:00:00 /usr/libexec/postfix/master -w
+postfix   3057  2965  0 16:11 ?        00:00:00 qmgr -l -t unix -u
+root      7261     1  0 18:56 ?        00:00:00 /usr/sbin/httpd -f //run/eucalyptus/httpd-cc.conf -DFOREGROUND
+eucalyp+  7277  7261  0 18:56 ?        00:00:00 /usr/sbin/httpd -f //run/eucalyptus/httpd-cc.conf -DFOREGROUND
+eucalyp+  7278  7261  0 18:56 ?        00:00:00 /usr/sbin/httpd -f //run/eucalyptus/httpd-cc.conf -DFOREGROUND
+eucalyp+  7279  7261  0 18:56 ?        00:00:00 /usr/sbin/httpd -f //run/eucalyptus/httpd-cc.conf -DFOREGROUND
+eucalyp+  7280  7261  0 18:56 ?        00:00:00 /usr/sbin/httpd -f //run/eucalyptus/httpd-cc.conf -DFOREGROUND
+eucalyp+  7281  7261  0 18:56 ?        00:00:00 /usr/sbin/httpd -f //run/eucalyptus/httpd-cc.conf -DFOREGROUND
+eucalyp+  7290  7279  0 18:56 ?        00:00:00 /usr/sbin/httpd -f //run/eucalyptus/httpd-cc.conf -DFOREGROUND
+root      7294     1  0 18:56 ?        00:00:00 /usr/sbin/httpd -f //run/eucalyptus/httpd-nc.conf -DFOREGROUND
+eucalyp+  7297  7279  0 18:56 ?        00:00:00 /usr/sbin/httpd -f //run/eucalyptus/httpd-cc.conf -DFOREGROUND
+eucalyp+  7301  7279  0 18:56 ?        00:00:00 /usr/sbin/httpd -f //run/eucalyptus/httpd-cc.conf -DFOREGROUND
+eucalyp+  7339     1  0 18:56 ?        00:00:00 /usr/sbin/eucanetd
+eucalyp+  7375  7294  1 18:56 ?        00:00:19 /usr/sbin/httpd -f //run/eucalyptus/httpd-nc.conf -DFOREGROUND
+eucalyp+  7440  7375  0 18:56 ?        00:00:00 /usr/sbin/httpd -f //run/eucalyptus/httpd-nc.conf -DFOREGROUND
+eucalyp+  7441  7375  0 18:56 ?        00:00:00 /usr/sbin/httpd -f //run/eucalyptus/httpd-nc.conf -DFOREGROUND
+eucalyp+  7442  7375  0 18:56 ?        00:00:01 /usr/sbin/httpd -f //run/eucalyptus/httpd-nc.conf -DFOREGROUND
+root      7786     1  0 18:27 ?        00:00:03 /usr/sbin/libvirtd
+eucalyp+  8029  7280  0 18:56 ?        00:00:00 /usr/sbin/httpd -f //run/eucalyptus/httpd-cc.conf -DFOREGROUND
+eucalyp+  8030  7280  0 18:56 ?        00:00:00 /usr/sbin/httpd -f //run/eucalyptus/httpd-cc.conf -DFOREGROUND
+eucalyp+  8162  7261  0 18:56 ?        00:00:00 /usr/sbin/httpd -f //run/eucalyptus/httpd-cc.conf -DFOREGROUND
+eucalyp+  8163  8162  0 18:56 ?        00:00:00 /usr/sbin/httpd -f //run/eucalyptus/httpd-cc.conf -DFOREGROUND
+root      9027     2  0 18:57 ?        00:00:00 [loop0]
+root      9142     2  0 18:57 ?        00:00:00 [loop1]
+root      9145     2  0 18:57 ?        00:00:00 [kdmflush]
+root      9146     2  0 18:57 ?        00:00:00 [bioset]
+root      9153     2  0 18:57 ?        00:00:00 [kdmflush]
+root      9154     2  0 18:57 ?        00:00:00 [kcopyd]
+root      9155     2  0 18:57 ?        00:00:00 [bioset]
+root      9156     2  0 18:57 ?        00:00:00 [bioset]
+root      9163     2  0 18:57 ?        00:00:00 [kdmflush]
+root      9164     2  0 18:57 ?        00:00:00 [bioset]
+root      9172     2  0 18:57 ?        00:00:01 [loop2]
+root      9175     2  0 18:57 ?        00:00:00 [kdmflush]
+root      9178     2  0 18:57 ?        00:00:00 [bioset]
+root      9185     2  0 18:57 ?        00:00:00 [kdmflush]
+root      9186     2  0 18:57 ?        00:00:00 [bioset]
+root      9194     2  0 18:57 ?        00:00:00 [kdmflush]
+root      9195     2  0 18:57 ?        00:00:00 [kcopyd]
+root      9196     2  0 18:57 ?        00:00:00 [bioset]
+root      9197     2  0 18:57 ?        00:00:00 [bioset]
+root      9204     2  0 18:57 ?        00:00:00 [kdmflush]
+root      9205     2  0 18:57 ?        00:00:00 [bioset]
+root      9213     2  0 18:57 ?        00:00:00 [kworker/1:1]
+root      9214     2  0 18:57 ?        00:00:00 [kworker/0:0]
+root      9215     2  0 18:57 ?        00:00:00 [kworker/2:0]
+root      9216     2  0 18:57 ?        00:00:00 [kworker/5:2]
+root      9223     2  0 18:57 ?        00:00:00 [kworker/6:2]
+root      9256     2  0 18:57 ?        00:00:00 [loop3]
+eucalyp+  9308  7375  0 18:57 ?        00:00:00 [blkid] <defunct>
+eucalyp+  9337  7375  0 18:57 ?        00:00:00 [blkid] <defunct>
+eucalyp+  9363  7375  0 18:57 ?        00:00:00 [blkid] <defunct>
+root      9468     1  0 18:57 ?        00:00:00 /usr/sbin/dhcpd -f -cf /var/run/eucalyptus/net/euca-dhcp.conf br0
+eucalyp+  9548  7261  0 18:58 ?        00:00:00 /usr/sbin/httpd -f //run/eucalyptus/httpd-cc.conf -DFOREGROUND
+eucalyp+  9560  7261  0 18:59 ?        00:00:00 /usr/sbin/httpd -f //run/eucalyptus/httpd-cc.conf -DFOREGROUND
+root      9588     2  0 18:37 ?        00:00:05 [kworker/u64:0]
+root      9633     2  0 19:00 ?        00:00:01 [loop4]
+root      9636     2  0 19:00 ?        00:00:00 [kdmflush]
+root      9637     2  0 19:00 ?        00:00:00 [bioset]
+root      9644     2  0 19:00 ?        00:00:00 [kdmflush]
+root      9645     2  0 19:00 ?        00:00:00 [kcopyd]
+root      9646     2  0 19:00 ?        00:00:00 [bioset]
+root      9647     2  0 19:00 ?        00:00:00 [bioset]
+root      9654     2  0 19:00 ?        00:00:00 [kdmflush]
+root      9655     2  0 19:00 ?        00:00:00 [bioset]
+root      9663     2  0 19:00 ?        00:00:00 [loop5]
+root      9666     2  0 19:00 ?        00:00:00 [kdmflush]
+root      9667     2  0 19:00 ?        00:00:00 [bioset]
+root      9674     2  0 19:00 ?        00:00:00 [kdmflush]
+root      9675     2  0 19:00 ?        00:00:00 [kcopyd]
+root      9676     2  0 19:00 ?        00:00:00 [bioset]
+root      9677     2  0 19:00 ?        00:00:00 [bioset]
+root      9684     2  0 19:00 ?        00:00:00 [kdmflush]
+root      9685     2  0 19:00 ?        00:00:00 [bioset]
+root      9902     1  0 19:02 ?        00:00:00 /usr/sbin/virtlogd
+qemu      9911     1  0 19:02 ?        00:00:02 /usr/libexec/qemu-kvm -name guest=i-f3929950,debug-threads=on -S -object secret,id=masterKey0,format=raw,file=/var/lib/libvirt/qemu/domain-1-i-f3929950/master-key.aes -machine pc-i440fx-rhel7.3.0,accel=kvm,usb=off -m 256 -realtime mlock=off -smp 1,sockets=1,cores=1,threads=1 -uuid 21648e5e-7e7f-4821-a623-a292b7ec8f9e -nographic -no-user-config -nodefaults -chardev socket,id=charmonitor,path=/var/lib/libvirt/qemu/domain-1-i-f3929950/monitor.sock,server,nowait -mon chardev=charmonitor,id=monitor,mode=control -rtc base=localtime -no-shutdown -boot strict=on -device piix3-usb-uhci,id=usb,bus=pci.0,addr=0x1.0x2 -drive file=/var/lib/eucalyptus/instances/work/AIDAAB7EW7P63SKMYXE2V/i-f3929950/link-to-vda,format=raw,if=none,id=drive-virtio-disk0,serial=euca-bdm-machine-dev-vda,cache=none -device virtio-blk-pci,scsi=off,bus=pci.0,addr=0x3,drive=drive-virtio-disk0,id=virtio-disk0,bootindex=1 -drive file=/var/lib/eucalyptus/instances/work/AIDAAB7EW7P63SKMYXE2V/i-f3929950/link-to-vdb,format=raw,if=none,id=drive-virtio-disk1,serial=euca-bdm-ephemeral0-dev-vdb,cache=none -device virtio-blk-pci,scsi=off,bus=pci.0,addr=0x4,drive=drive-virtio-disk1,id=virtio-disk1 -netdev tap,fd=26,id=hostnet0,vhost=on,vhostfd=28 -device virtio-net-pci,netdev=hostnet0,id=net0,mac=d0:0d:f3:92:99:50,bus=pci.0,addr=0x2 -add-fd set=2,fd=30 -chardev file,id=charserial0,path=/dev/fdset/2,append=on -device isa-serial,chardev=charserial0,id=serial0 -device virtio-balloon-pci,id=balloon0,bus=pci.0,addr=0x5 -msg timestamp=on
+root      9912     1  0 19:02 ?        00:00:00 /usr/lib/systemd/systemd-machined
+root      9914     2  0 19:02 ?        00:00:00 [vhost-9911]
+root      9917     2  0 19:02 ?        00:00:00 [kvm-pit/9911]
+qemu      9932     1  3 19:02 ?        00:00:48 /usr/libexec/qemu-kvm -name guest=i-bcac32e7,debug-threads=on -S -object secret,id=masterKey0,format=raw,file=/var/lib/libvirt/qemu/domain-2-i-bcac32e7/master-key.aes -machine pc-i440fx-rhel7.3.0,accel=kvm,usb=off -m 256 -realtime mlock=off -smp 1,sockets=1,cores=1,threads=1 -uuid 324795d6-4827-4d1c-a5bc-e8a252fcfd03 -nographic -no-user-config -nodefaults -chardev socket,id=charmonitor,path=/var/lib/libvirt/qemu/domain-2-i-bcac32e7/monitor.sock,server,nowait -mon chardev=charmonitor,id=monitor,mode=control -rtc base=localtime -no-shutdown -boot strict=on -device piix3-usb-uhci,id=usb,bus=pci.0,addr=0x1.0x2 -drive file=/var/lib/eucalyptus/instances/work/AIDAALWJCFSX4ZCIP7HPF/i-bcac32e7/link-to-vda,format=raw,if=none,id=drive-virtio-disk0,serial=euca-bdm-machine-dev-vda,cache=none -device virtio-blk-pci,scsi=off,bus=pci.0,addr=0x3,drive=drive-virtio-disk0,id=virtio-disk0,bootindex=1 -drive file=/var/lib/eucalyptus/instances/work/AIDAALWJCFSX4ZCIP7HPF/i-bcac32e7/link-to-vdb,format=raw,if=none,id=drive-virtio-disk1,serial=euca-bdm-ephemeral0-dev-vdb,cache=none -device virtio-blk-pci,scsi=off,bus=pci.0,addr=0x4,drive=drive-virtio-disk1,id=virtio-disk1 -drive file=/var/lib/eucalyptus/instances/work/AIDAALWJCFSX4ZCIP7HPF/i-bcac32e7/floppy,format=raw,if=none,id=drive-fdc0-0-0,cache=none -global isa-fdc.driveA=drive-fdc0-0-0 -netdev tap,fd=27,id=hostnet0,vhost=on,vhostfd=29 -device virtio-net-pci,netdev=hostnet0,id=net0,mac=d0:0d:bc:ac:32:e7,bus=pci.0,addr=0x2 -add-fd set=2,fd=31 -chardev file,id=charserial0,path=/dev/fdset/2,append=on -device isa-serial,chardev=charserial0,id=serial0 -device virtio-balloon-pci,id=balloon0,bus=pci.0,addr=0x5 -msg timestamp=on
+root      9934     2  0 19:02 ?        00:00:00 [vhost-9932]
+root      9937     2  0 19:02 ?        00:00:00 [kvm-pit/9932]
+root      9959     2  0 19:02 ?        00:00:00 [kworker/1:2]
+root      9960     2  0 19:02 ?        00:00:00 [kworker/5:1]
+root      9963     2  0 19:02 ?        00:00:00 [kworker/7:0]
+root      9986     2  0 19:02 ?        00:00:00 [kworker/6:1]
+root      9987     2  0 19:02 ?        00:00:00 [kworker/2:2]
+root     10084     2  0 17:01 ?        00:00:00 [dm_bufio_cache]
+root     10228     2  0 19:03 ?        00:00:00 [kworker/0:1]
+root     10316     2  0 17:05 ?        00:00:00 [kdmflush]
+root     10317     2  0 17:05 ?        00:00:00 [bioset]
+root     10318     2  0 17:05 ?        00:00:00 [bioset]
+root     10319     2  0 17:05 ?        00:00:00 [kdmflush]
+root     10320     2  0 17:05 ?        00:00:00 [bioset]
+root     10322     2  0 17:05 ?        00:00:00 [kdmflush]
+root     10323     2  0 17:05 ?        00:00:00 [ksnaphd]
+root     10325     2  0 17:05 ?        00:00:00 [kcopyd]
+root     10326     2  0 17:05 ?        00:00:00 [bioset]
+root     10327     2  0 17:05 ?        00:00:00 [bioset]
+root     10329     2  0 17:05 ?        00:00:00 [bioset]
+root     10338     1  0 17:05 ?        00:00:01 /usr/sbin/dmeventd -f
+root     10504 20353  0 18:39 pts/0    00:00:00 tail -f /var/log/euca-install-07.30.2017-18.38.01.log
+root     10535     2  0 17:07 ?        00:00:00 [kdmflush]
+root     10536     2  0 17:07 ?        00:00:00 [bioset]
+root     10537     2  0 17:07 ?        00:00:00 [bioset]
+root     10538     2  0 17:07 ?        00:00:00 [kdmflush]
+root     10539     2  0 17:07 ?        00:00:00 [bioset]
+root     10540     2  0 17:07 ?        00:00:00 [kdmflush]
+root     10542     2  0 17:07 ?        00:00:00 [ksnaphd]
+root     10544     2  0 17:07 ?        00:00:00 [kcopyd]
+root     10545     2  0 17:07 ?        00:00:00 [bioset]
+root     10546     2  0 17:07 ?        00:00:00 [bioset]
+root     10548     2  0 17:07 ?        00:00:00 [bioset]
+root     11765     1  0 16:33 ?        00:00:07 sshd: root@pts/1,pts/0
+root     11769 11765  0 16:33 pts/1    00:00:00 -bash
+root     13264     1  0 16:38 ?        00:00:00 /usr/sbin/crond -n
+root     13312     1  0 16:38 ?        00:00:00 /usr/lib/systemd/systemd-udevd
+root     13398     2  0 19:11 ?        00:00:00 [kworker/u64:1]
+root     14230     1  0 16:39 ?        00:00:00 /usr/sbin/lvmetad -f
+root     14265     1  0 16:39 ?        00:00:00 /usr/sbin/sshd -D
+root     14306     1  0 16:39 ?        00:00:00 /sbin/auditd -n
+polkitd  14406     1  0 16:40 ?        00:00:03 /usr/lib/polkit-1/polkitd --no-debug
+root     14417     1  0 16:40 ?        00:00:00 /usr/bin/python -Es /usr/sbin/tuned -l -P
+root     14483     1  0 16:40 ?        00:00:00 /usr/sbin/irqbalance --foreground
+root     15345     2  0 19:17 ?        00:00:00 [kworker/4:0]
+root     15671     1  0 18:09 ?        00:00:00 /usr/sbin/tgtd -f
+root     16294     2  0 19:19 ?        00:00:00 [kworker/3:1]
+root     17069     2  0 19:22 ?        00:00:00 [kworker/4:2]
+root     17399     1  0 18:43 ?        00:00:00 nginx: master process /usr/sbin/nginx -c /etc/eucaconsole/nginx.conf
+nginx    17400 17399  0 18:43 ?        00:00:00 nginx: worker process
+nginx    17401 17399  0 18:43 ?        00:00:00 nginx: worker process
+nginx    17402 17399  0 18:43 ?        00:00:00 nginx: worker process
+nginx    17403 17399  0 18:43 ?        00:00:00 nginx: worker process
+eucacon+ 17408     1  0 18:43 ?        00:00:00 memcached -d -p -u eucaconsole -m 64 -c 1024 -P /var/run/eucaconsole/memcached.pid -s /var/run/eucaconsole/memcached.sock -a 0700
+eucacon+ 17431     1  0 18:43 ?        00:00:02 /usr/bin/python -tt /bin/eucaconsole -d -p /var/run/eucaconsole/eucaconsole.pid -l /var/log/eucaconsole_startup.log
+eucacon+ 17490 17431  0 18:43 ?        00:00:03 /usr/bin/python -tt /bin/eucaconsole -d -p /var/run/eucaconsole/eucaconsole.pid -l /var/log/eucaconsole_startup.log
+eucacon+ 17491 17431  0 18:43 ?        00:00:00 /usr/bin/python -tt /bin/eucaconsole -d -p /var/run/eucaconsole/eucaconsole.pid -l /var/log/eucaconsole_startup.log
+eucacon+ 17492 17431  0 18:43 ?        00:00:03 /usr/bin/python -tt /bin/eucaconsole -d -p /var/run/eucaconsole/eucaconsole.pid -l /var/log/eucaconsole_startup.log
+eucacon+ 17493 17431  0 18:43 ?        00:00:03 /usr/bin/python -tt /bin/eucaconsole -d -p /var/run/eucaconsole/eucaconsole.pid -l /var/log/eucaconsole_startup.log
+root     18034     2  0 19:25 ?        00:00:00 [kworker/3:0]
+root     18040     2  0 19:25 ?        00:00:00 [kworker/3:2]
+root     18522 11769  0 19:26 pts/1    00:00:00 ps -ef
+root     19373     1  0 18:11 ?        00:00:00 /usr/sbin/rsyslogd -n
+root     20192     2  0 17:39 ?        00:00:00 [jbd2/dm-5-8]
+root     20193     2  0 17:39 ?        00:00:00 [ext4-rsv-conver]
+postfix  20210  2965  0 17:51 ?        00:00:00 pickup -l -t unix -u
+root     20353 11765  0 17:52 pts/0    00:00:00 -bash
+chrony   21277     1  0 17:53 ?        00:00:00 /usr/sbin/chronyd
+root     21852     1  0 18:45 ?        00:00:00 eucalyptus-cloud --bind-addr=192.168.0.5
+eucalyp+ 22858 21852 27 18:46 ?        00:11:03 eucalyptus-cloud --bind-addr=192.168.0.5
+eucalyp+ 24141     1  0 18:46 ?        00:00:00 /usr/bin/postgres -D /var/lib/eucalyptus/db/data -h0.0.0.0 -p8777
+eucalyp+ 24151 24141  0 18:46 ?        00:00:00 postgres: logger process   
+eucalyp+ 24166 24141  0 18:46 ?        00:00:00 postgres: checkpointer process   
+eucalyp+ 24167 24141  0 18:46 ?        00:00:00 postgres: writer process   
+eucalyp+ 24168 24141  0 18:46 ?        00:00:00 postgres: wal writer process   
+eucalyp+ 24169 24141  0 18:46 ?        00:00:00 postgres: autovacuum launcher process   
+eucalyp+ 24170 24141  0 18:46 ?        00:00:01 postgres: stats collector process   
+eucalyp+ 24560 24141  0 18:46 ?        00:00:03 postgres: eucalyptus eucalyptus_shared 127.0.0.1(46018) idle
+eucalyp+ 24561 24141  0 18:46 ?        00:00:03 postgres: eucalyptus eucalyptus_shared 127.0.0.1(46020) idle
+eucalyp+ 24562 24141  0 18:46 ?        00:00:03 postgres: eucalyptus eucalyptus_shared 127.0.0.1(46022) idle
+eucalyp+ 24563 24141  0 18:46 ?        00:00:05 postgres: eucalyptus eucalyptus_shared 127.0.0.1(46024) idle
+eucalyp+ 24568 24141  0 18:46 ?        00:00:03 postgres: eucalyptus eucalyptus_shared 127.0.0.1(46026) idle
+eucalyp+ 24573 24141  0 18:46 ?        00:00:03 postgres: eucalyptus eucalyptus_shared 127.0.0.1(46028) idle
+eucalyp+ 24579 24141  0 18:46 ?        00:00:03 postgres: eucalyptus eucalyptus_shared 127.0.0.1(46030) idle
+eucalyp+ 24620 24141  0 18:46 ?        00:00:03 postgres: eucalyptus eucalyptus_shared 127.0.0.1(46032) idle
+eucalyp+ 24645 24141  0 18:46 ?        00:00:03 postgres: eucalyptus eucalyptus_shared 127.0.0.1(46034) idle
+eucalyp+ 24646 24141  0 18:46 ?        00:00:03 postgres: eucalyptus eucalyptus_shared 127.0.0.1(46036) idle
+eucalyp+ 24647 24141  0 18:46 ?        00:00:03 postgres: eucalyptus eucalyptus_shared 127.0.0.1(46038) idle
+eucalyp+ 24648 24141  0 18:46 ?        00:00:04 postgres: eucalyptus eucalyptus_shared 127.0.0.1(46040) idle
+eucalyp+ 24649 24141  0 18:46 ?        00:00:03 postgres: eucalyptus eucalyptus_shared 127.0.0.1(46042) idle
+eucalyp+ 24650 24141  0 18:46 ?        00:00:03 postgres: eucalyptus eucalyptus_shared 127.0.0.1(46044) idle
+eucalyp+ 24651 24141  0 18:46 ?        00:00:03 postgres: eucalyptus eucalyptus_shared 127.0.0.1(46046) idle
+eucalyp+ 24652 24141  0 18:46 ?        00:00:03 postgres: eucalyptus eucalyptus_shared 127.0.0.1(46048) idle
+eucalyp+ 24746 24141  0 18:47 ?        00:00:00 postgres: eucalyptus database_events 127.0.0.1(46050) idle
+eucalyp+ 25115 24141  0 18:47 ?        00:00:03 postgres: eucalyptus eucalyptus_shared 127.0.0.1(46054) idle
+eucalyp+ 25146 24141  0 18:47 ?        00:00:03 postgres: eucalyptus eucalyptus_shared 127.0.0.1(46056) idle
+eucalyp+ 25147 24141  0 18:47 ?        00:00:03 postgres: eucalyptus eucalyptus_shared 127.0.0.1(46058) idle
+eucalyp+ 25148 24141  0 18:47 ?        00:00:03 postgres: eucalyptus eucalyptus_shared 127.0.0.1(46060) idle
+eucalyp+ 25149 24141  0 18:47 ?        00:00:03 postgres: eucalyptus eucalyptus_shared 127.0.0.1(46062) idle
+eucalyp+ 25150 24141  0 18:47 ?        00:00:03 postgres: eucalyptus eucalyptus_shared 127.0.0.1(46064) idle
+eucalyp+ 25151 24141  0 18:47 ?        00:00:03 postgres: eucalyptus eucalyptus_shared 127.0.0.1(46066) idle
+eucalyp+ 25152 24141  0 18:47 ?        00:00:03 postgres: eucalyptus eucalyptus_shared 127.0.0.1(46068) idle
+eucalyp+ 25153 24141  0 18:47 ?        00:00:03 postgres: eucalyptus eucalyptus_shared 127.0.0.1(46070) idle
+eucalyp+ 25154 24141  0 18:47 ?        00:00:03 postgres: eucalyptus eucalyptus_shared 127.0.0.1(46072) idle
+eucalyp+ 25155 24141  0 18:47 ?        00:00:03 postgres: eucalyptus eucalyptus_shared 127.0.0.1(46074) idle
+eucalyp+ 25156 24141  0 18:47 ?        00:00:03 postgres: eucalyptus eucalyptus_shared 127.0.0.1(46076) idle
+eucalyp+ 25157 24141  0 18:47 ?        00:00:03 postgres: eucalyptus eucalyptus_shared 127.0.0.1(46078) idle
+eucalyp+ 25158 24141  0 18:47 ?        00:00:03 postgres: eucalyptus eucalyptus_shared 127.0.0.1(46080) idle
+eucalyp+ 25159 24141  0 18:47 ?        00:00:03 postgres: eucalyptus eucalyptus_shared 127.0.0.1(46082) idle
+eucalyp+ 25161 24141  0 18:47 ?        00:00:03 postgres: eucalyptus eucalyptus_shared 127.0.0.1(46084) idle
+eucalyp+ 25162 24141  0 18:47 ?        00:00:03 postgres: eucalyptus eucalyptus_shared 127.0.0.1(46086) idle
+eucalyp+ 25166 24141  0 18:47 ?        00:00:03 postgres: eucalyptus eucalyptus_shared 127.0.0.1(46088) idle
+root     25176     2  0 18:47 ?        00:00:00 [kworker/4:1]
+eucalyp+ 25292 24141  0 18:47 ?        00:00:00 postgres: eucalyptus database_events 127.0.0.1(46098) idle
+root     28940     2  0 18:48 ?        00:00:00 [kworker/3:3]

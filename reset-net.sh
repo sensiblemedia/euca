@@ -3,6 +3,7 @@
 
 ifcfg_dir=/etc/sysconfig/network-scripts
 cp -f ./ifcfg-em1-static ${ifcfg_dir}/ifcfg-em1
+cp -f ./resolv.conf /etc/resolv.conf
 brctl show
 brctl delif br0 em1
 brctl show
