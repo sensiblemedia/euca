@@ -50,11 +50,13 @@ enabled=1
 gpgcheck=1
 gpgkey=https://builds.midonet.org/midorepo.key
 
+Enable RDO repository
+yum -y install https://rdoproject.org/repos/openstack-mitaka/rdo-release-mitaka.rpm
+
 Configure network
 
-
-yum install http://dl.fedoraproject.org/pub/epel/7/x86_64/e/epel-release-7-5.noarch.rpm
-yum install http://rdo.fedorapeople.org/openstack-kilo/rdo-release-kilo.rpm
+yum -y install http://dl.fedoraproject.org/pub/epel/7/x86_64/e/epel-release-7-5.noarch.rpm
+yum -y install http://rdo.fedorapeople.org/openstack-kilo/rdo-release-kilo.rpm
 
 Install available updates
 
@@ -63,13 +65,15 @@ Install available updates
 
 # Install zookeeper
 ########################################
-
+yum -y install java-1.8.0-openjdk-headless
 yum -y install zookeeper zkdump nmap-ncat
 https://docs.midonet.org/docs/latest-en/quick-start-guide/rhel-7_mitaka-rdo/content/_zookeeper_installation.htm
 
 vi /etc/zookeeper/zoo.cfg
 
 echo 1 > /var/lib/zookeeper/data/myid
+mkdir -p /usr/java/default/bin/
+ln -s /usr/lib/jvm/jre-1.8.0-openjdk/bin/java /usr/java/default/bin/java
 systemctl enable zookeeper.service
 systemctl start zookeeper.service
 
@@ -83,6 +87,8 @@ echo stat | nc 127.0.0.1 2181
 ########################################
 
 yum -y install dsc22
+cp cassandra.yaml /etc/cassandra/conf/cassandra.yaml
+cp cassandra-etcinit.d-script /etc/init.d/cassandra
 
 /etc/cassandra/conf/cassandra.yaml
 
@@ -107,6 +113,7 @@ nodetool --host 127.0.0.1 status
 
 yum install -y midonet-cluster midolman python-midonetclient
 
+cp midonet.conf /etc/midonet/midonet.conf
 vi /etc/midonet/midonet.conf
 [zookeeper]
 zookeeper_hosts = 127.0.0.1:2181
@@ -122,6 +129,8 @@ systemctl status midonet-cluster.service
 
 mn-conf set cluster.rest_api.http_port=8080
 mn-conf set cluster.rest_api.http_host="127.0.0.1"
+
+systemctl restart midonet-cluster.service
 
 # install Midolman agent
 

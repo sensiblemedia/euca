@@ -6,3 +6,5 @@ systemctl stop NetworkManager.service
 systemctl disable NetworkManager.service
 yum -y remove NetworkManager 
 yum -y update
+yum -y install bridge-utils
+

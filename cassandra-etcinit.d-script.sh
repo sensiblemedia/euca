@@ -53,7 +53,7 @@ case "$1" in
     start)
         # Cassandra startup
         echo -n "Starting Cassandra: "
-	mkdir -p /var/run/cassandra
+	    mkdir -p /var/run/cassandra
         chown cassandra:cassandra /var/run/cassandra
         su $CASSANDRA_OWNR -c "$CASSANDRA_PROG -p $pid_file" > $log_file 2>&1
         retval=$?
