@@ -1,0 +1,55 @@
+
+Reset Eucalyptus:
+
+# Dump postgres
+pg_dumpall --oids -c -h/var/lib/eucalyptus/db/data -p8777 -U root -f/root/eucalyptus_pg_dumpall-backup.sql
+# Stop Euca
+./euca-run.sh stop
+# Backup Keys
+tar -czvf ~/eucalyptus-keydir.tgz /var/lib/eucalyptus/keys
+# Stop Midonet
+./midonet-run.sh stop
+# Stop any VM's that are still running
+virsh list
+virsh destroy i-41026dcc
+virsh list
+# Kill any process that are remaining (nginx)
+ps -ef
+kill 7960
+ps -ef
+
+# Move or delete postgress data
+mv /var/lib/eucalyptus/db/data ../data
+rm -rf /var/lib/eucalyptus/db/tx
+# Remove keys
+rm -fr /var/lib/eucalyptus/keys
+# Restart network to clear virt interfaces if fails reboot
+ip a
+service network restart
+ip a
+reboot
+cd /var/log/eucalyptus/
+midonet-cli -A --midonet-url=http://localhost:8080/midonet-api
+
+# Delete Cassandra and Zookeeper data
+rm -rf /var/lib/cassandra/*
+rm -rf /var/lib/zookeeper/*
+rm -rf /var/log/cassandra
+mkdir /var/lib/zookeeper/data
+chmod 777 /var/lib/zookeeper/data
+echo 1 > /var/lib/zookeeper/data/myid
+mkdir /var/log/cassandra
+chown cassandra:cassandra /var/log/cassandra
+chown cassandra:cassandra /var/lib/cassandra/
+
+cd ~/euca
+./midonet-run.sh start
+
+# Test Zookeeper connectivity
+echo ruok | nc 127.0.0.1 2181
+# Test Cassandra connectivity
+nodetool --host 127.0.0.1 status
+
+# Connect to midonet client
+midonet-cli -A --midonet-url=http://localhost:8080/midonet-api
+

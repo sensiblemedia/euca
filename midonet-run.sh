@@ -9,8 +9,7 @@ stop() {
     systemctl stop cassandra.service
     echo "Stopping zookeeper.service"
     systemctl stop zookeeper.service 
-    RETVAL=$?          
-    
+    RETVAL=$?              
 }
 start() {
     echo "Starting zookeeper.service"
@@ -21,8 +20,29 @@ start() {
     systemctl start midonet-cluster.service
     echo "Starting midolman.service"
     systemctl start midolman.service
-	RETVAL=$?
-    
+    RETVAL=$?
+}
+enable() {
+    echo "Enable zookeeper.service"
+    systemctl enable zookeeper.service
+    echo "Enable cassandra.service"
+    systemctl enable cassandra.service
+    echo "Enable mimidonet-cluster.service"      
+    systemctl enable midonet-cluster.service
+    echo "Enable midolman.service"
+    systemctl enable midolman.service
+	RETVAL=$?  
+}
+disable() {
+    echo "Disabling zookeeper.service"
+    systemctl disable zookeeper.service
+    echo "Disabling cassandra.service"
+    systemctl disable cassandra.service
+    echo "Disabling mimidonet-cluster.service"      
+    systemctl disable midonet-cluster.service
+    echo "Disabling midolman.service"
+    systemctl disable midolman.service
+	RETVAL=$?  
 }
 
 case "$1" in
@@ -35,6 +55,12 @@ case "$1" in
     restart)
 	    stop
 	    start
+	    ;;
+    enable)
+	    enable
+	    ;;
+    disable)
+	    disable
 	    ;;
     *)
 	echo $"Usage: $prog {start|stop|restart}"

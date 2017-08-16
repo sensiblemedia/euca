@@ -35,3 +35,8 @@ setsebool -P httpd_can_network_connect 1
 
 # If employing VPCMIDO on the CLC execute:
 setsebool -P httpd_can_network_connect 1
+
+# For Eucalyptus images decompresion see http://emis.eucalyptus.com/ 
+yum -y install -y xz
+# bash <(curl -Ls  http://eucalyptus.com/install-emis)
+

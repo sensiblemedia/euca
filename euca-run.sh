@@ -29,6 +29,8 @@ start() {
     systemctl start eucalyptus-node.service
     echo "Starting eucaconsole.service"
     systemctl start eucaconsole.service
+    echo "Starting console nginx server"
+    /usr/sbin/nginx -c /etc/eucaconsole/nginx.conf
 	RETVAL=$?
     
 }
@@ -56,6 +58,39 @@ status() {
     
 }
 
+enable() {
+    echo "Enable eucalyptus-cloud.service"
+    systemctl enable eucalyptus-cloud.service
+    echo "Enable eeucalyptus-cluster.service"
+    systemctl enable eucalyptus-cluster.service
+    echo "Enable eucanetd.service"
+    systemctl enable eucanetd.service
+    echo "Enable tgtd.service"
+    systemctl enable tgtd.service
+    echo "Enable eucalyptus-node.service"
+    systemctl enable eucalyptus-node.service
+    echo "Enable eucaconsole.service"
+    systemctl enable eucaconsole.service
+    echo "Enable console nginx server"
+	RETVAL=$? 
+}
+disable() {
+    echo "Disable eucalyptus-cloud.service"
+    systemctl disable eucalyptus-cloud.service
+    echo "Disable eeucalyptus-cluster.service"
+    systemctl disable eucalyptus-cluster.service
+    echo "Disable eucanetd.service"
+    systemctl disable eucanetd.service
+    echo "Disable tgtd.service"
+    systemctl disable tgtd.service
+    echo "Disable eucalyptus-node.service"
+    systemctl disable eucalyptus-node.service
+    echo "Disable eucaconsole.service"
+    systemctl disable eucaconsole.service
+    echo "Disable console nginx server"
+	RETVAL=$? 
+}
+
 seperator() {
     str=$1
     num=$2
@@ -76,6 +111,12 @@ case "$1" in
     restart)
 	    stop
 	    start
+	    ;;
+    enable)
+	    enable
+	    ;;
+    disable)
+	    disable
 	    ;;
     *)
 	echo $"Usage: $prog {start|stop|restart}"
